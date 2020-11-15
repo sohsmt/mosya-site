@@ -1,0 +1,54 @@
+<template>
+  <div class="header">
+    <div class="site__top">
+      <div class="site__title">
+        <img src="~/assets/image/siteTitle.png" alt="サイトタイトル" />
+      </div>
+      <div class="site__info">
+        <p>"地域に根付いた歯科医院"デンタルクリニック</p>
+        <p class="site__info-2">03-0000-0000</p>
+        <div class="site__info-time">
+          <p>予約受付時間 10:00～19:30 <span>日祝 休診</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="site__nav">
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#"
+              ><p>トップぺージ<br /><span>HOME</span></p></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><p>医院紹介<br /><span>CLINIC</span></p>
+              <p></p
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><p>診療案内<br /><span>SERVICE</span></p></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><p>院長・スタッフ紹介<br /><span>STAFF</span></p></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><p>アクセス<br /><span>ACCESS</span></p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</template>
+
+<style lang="scss"></style>
+
+<script>
+export default {}
+</script>

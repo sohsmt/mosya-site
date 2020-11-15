@@ -1,0 +1,92 @@
+$main-color: linear-gradient(rgb(156, 227, 225) 0%, rgb(108, 198, 196) 100%);
+$main-color-hover: linear-gradient(
+  rgb(108, 198, 196) 100%,
+  rgb(156, 227, 225) 0%
+);
+
+.header {
+  margin-bottom: 22px;
+
+  .site__top {
+    display: flex;
+    height: 135px;
+    justify-content: space-between;
+
+    .site__title,
+    .site__info {
+      margin: auto 0;
+    }
+
+    .site__info {
+      p {
+        font-size: 10px;
+      }
+      .site__info-2 {
+        font-size: 120%;
+        margin: 0;
+        &::before {
+          padding-right: 10px;
+          content: url('../image/bgTel.png');
+        }
+      }
+      .site__info-time {
+        padding: 0;
+        line-height: 4px;
+        border: solid 1px #d6d6d6;
+        text-align: center;
+        span {
+          color: #b22c4f;
+        }
+      }
+    }
+  }
+  .site__nav {
+    .nav {
+      background: $main-color;
+      border-radius: 10px;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        list-style: none;
+
+        li {
+          padding: 0 auto;
+          width: 100%;
+          text-align: center;
+          border-right: #71c9c7 solid 1px;
+          border-left: #99e1df solid 1px;
+          &:first-child {
+            border-left: none;
+          }
+          &:last-child {
+            border-right: none;
+          }
+          &:hover {
+            background: $main-color-hover;
+            opacity: 0.5;
+          }
+
+          a {
+            padding: 0;
+            display: block;
+            height: 100%;
+            position: relative;
+            text-decoration: none;
+
+            p {
+              font-weight: bold;
+              font-size: 14px;
+              color: #fff;
+              span {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
