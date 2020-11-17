@@ -1,10 +1,109 @@
 .main {
   display: flex;
 
-  .main__menu {
+  // 左側のメニュー
+  .menu {
     width: 30%;
+    margin-right: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    // 左上と左下のメニュー
+    &-head,
+    &-foot {
+      border: 1px solid #6cc6c4;
+      background: #fff;
+
+      h2 {
+        margin: 0;
+        padding: 5px 0;
+        background: $main-color;
+        color: $white;
+      }
+
+      .menu-title {
+        ul {
+          margin-top: 5px;
+          margin-bottom: 10px;
+          padding-left: 10px;
+          list-style: none;
+
+          li {
+            margin: 0 10px;
+            padding: 5px 2px;
+            background: url('../image/bgListIcon01.png') no-repeat;
+            background-position: left;
+            border-bottom: 1px solid #6cc6c4;
+
+            a {
+              margin-left: 2px;
+              padding-left: 15px;
+              color: $text-color;
+              font-weight: bold;
+              font-size: 0.7em;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    &-head {
+      margin-bottom: 20px;
+    }
   }
-  .main__top {
+  .main_top {
     width: 70%;
+
+    .main_info-wrap {
+      background-color: #fff;
+      padding: 5%;
+
+      h2 {
+        padding: 7px 0;
+        border-bottom: 3px solid #6cc6c4;
+      }
+
+      .news {
+        margin: 10px 0;
+        .main_info {
+          letter-spacing: -0.4em;
+          border-bottom: 1px dotted #cccccc;
+
+          .main_info-time,
+          .main_info-text {
+            display: inline-block;
+            letter-spacing: normal;
+            vertical-align: top;
+          }
+
+          .main_info-time {
+            width: 20%;
+
+            p {
+              margin: 13px 0;
+
+              time {
+                vertical-align: top;
+                font-size: 13px;
+                font-weight: bold;
+              }
+            }
+          }
+          .main_info-text {
+            width: 80%;
+            padding-left: 25px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
   }
 }
