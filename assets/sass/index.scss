@@ -9,23 +9,24 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 
+    h2 {
+      margin: 0;
+      padding: 7px;
+      background: $main-color;
+      border-radius: 6px 6px 0 0;
+      color: $white;
+    }
+
     // 左上と左下のメニュー
     &-head,
     &-foot {
       border: 1px solid #6cc6c4;
       background: #fff;
 
-      h2 {
-        margin: 0;
-        padding: 5px 0;
-        background: $main-color;
-        color: $white;
-      }
-
       .menu-title {
         ul {
           margin-top: 5px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
           padding-left: 10px;
           list-style: none;
 
