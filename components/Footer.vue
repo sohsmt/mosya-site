@@ -2,7 +2,10 @@
   <footer class="footer">
     <div class="footer_menu">
       <ul>
-        <li>
+        <li v-for="item in items" :key="item">
+          <a href="#">{{ item }}</a>
+        </li>
+        <!-- <li>
           <a href="#">トップページ</a>
         </li>
         <li>
@@ -16,7 +19,7 @@
         </li>
         <li>
           <a href="#">アクセス</a>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class="footer_address">
@@ -30,3 +33,24 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        'トップページ',
+        '医院紹介',
+        '診療紹介',
+        '院長・スタッフ紹介',
+        'アクセス',
+        // { menu: 'トップページ' },
+        // { menu: '医院紹介' },
+        // { menu: '診療紹介' },
+        // { menu: '院長・スタッフ紹介' },
+        // { menu: 'アクセス' },
+      ],
+    }
+  },
+}
+</script>
