@@ -2,7 +2,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     htmlAttrs: {
-      leng: 'ja',
+      lang: 'ja',
     },
     title: 'mosya3',
     meta: [

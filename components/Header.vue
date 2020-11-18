@@ -15,31 +15,12 @@
     <div class="site__nav">
       <nav class="nav">
         <ul>
-          <li>
-            <a href="#"
-              ><p>トップぺージ<br /><span>HOME</span></p></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><p>医院紹介<br /><span>CLINIC</span></p>
-              <p></p
-            ></a>
-          </li>
-          <li>
-            <a href="#"
-              ><p>診療案内<br /><span>SERVICE</span></p></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><p>院長・スタッフ紹介<br /><span>STAFF</span></p></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><p>アクセス<br /><span>ACCESS</span></p></a
-            >
+          <li v-for="link in links" :key="link.label">
+            <nuxt-link :to="link.path">
+              <P
+                >{{ link.label }} <br /><span>{{ link.span }}</span>
+              </P>
+            </nuxt-link>
           </li>
         </ul>
       </nav>
@@ -50,5 +31,17 @@
 <style lang="scss"></style>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      links: [
+        { label: 'トップぺージ', span: 'HOME', path: '/' },
+        { label: '医院紹介', span: 'CLINIC', path: '/clinic' },
+        { label: '診療案内', span: 'SERVICE', path: '/service' },
+        { label: '院長・スタッフ紹介', span: 'STAFF', path: '/staff' },
+        { label: 'アクセス', span: 'ACCESS', path: '/access' },
+      ],
+    }
+  },
+}
 </script>

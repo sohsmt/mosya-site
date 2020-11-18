@@ -2,24 +2,9 @@
   <footer class="footer">
     <div class="footer_menu">
       <ul>
-        <li v-for="item in items" :key="item">
-          <a href="#">{{ item }}</a>
+        <li v-for="link in links" :key="link">
+          <nuxt-link :to="link.path">{{ link.label }}</nuxt-link>
         </li>
-        <!-- <li>
-          <a href="#">トップページ</a>
-        </li>
-        <li>
-          <a href="#">医院紹介</a>
-        </li>
-        <li>
-          <a href="#">診療紹介</a>
-        </li>
-        <li>
-          <a href="#">院長・スタッフ紹介</a>
-        </li>
-        <li>
-          <a href="#">アクセス</a>
-        </li> -->
       </ul>
     </div>
     <div class="footer_address">
@@ -38,17 +23,12 @@
 export default {
   data() {
     return {
-      items: [
-        'トップページ',
-        '医院紹介',
-        '診療紹介',
-        '院長・スタッフ紹介',
-        'アクセス',
-        // { menu: 'トップページ' },
-        // { menu: '医院紹介' },
-        // { menu: '診療紹介' },
-        // { menu: '院長・スタッフ紹介' },
-        // { menu: 'アクセス' },
+      links: [
+        { label: 'トップぺージ', span: 'HOME', path: '/' },
+        { label: '医院紹介', span: 'CLINIC', path: '/clinic' },
+        { label: '診療案内', span: 'SERVICE', path: '/service' },
+        { label: '院長・スタッフ紹介', span: 'STAFF', path: '/staff' },
+        { label: 'アクセス', span: 'ACCESS', path: '/access' },
       ],
     }
   },
