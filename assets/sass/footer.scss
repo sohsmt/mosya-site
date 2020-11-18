@@ -1,0 +1,53 @@
+.footer {
+  &_menu {
+    background: #6cc6c4;
+    border-radius: 5px;
+
+    ul {
+      margin: 0;
+
+      li {
+        padding: 0 15px;
+        display: inline-block;
+        position: relative;
+
+        a {
+          color: #fff;
+          font-size: 13px;
+          list-style: none;
+          text-decoration: none;
+        }
+
+        &::before {
+          position: absolute;
+          content: url('../image/bgFooterIcon.png');
+          top: 3px;
+          left: -7px;
+        }
+      }
+    }
+  }
+
+  &_address {
+    border-bottom: 2px solid #6cc6c4;
+
+    p {
+      text-align: right;
+      font-size: 13px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &_coppyright {
+    padding: 10px 0;
+    text-align: center;
+
+    small {
+      padding: 5px 0;
+      font-size: 9px;
+    }
+  }
+}
