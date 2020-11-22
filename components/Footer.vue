@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer_menu">
       <ul>
-        <li v-for="link in links" :key="link">
+        <li v-for="link in links" :key="link.index">
           <nuxt-link :to="link.path">{{ link.label }}</nuxt-link>
         </li>
       </ul>
