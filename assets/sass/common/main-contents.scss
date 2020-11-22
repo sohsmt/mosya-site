@@ -1,2 +1,25 @@
-.main-contents {
+.clinic {
+  .clinic_main {
+    display: flex;
+
+    .main-contents_wrapper {
+      width: 70%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      h2 {
+        margin: 0;
+        padding: 20px 0 20px 20px;
+        height: 60px;
+        vertical-align: middle;
+        background: $main-color;
+        color: $title-color;
+        border-radius: 10px;
+      }
+
+      .main-contents {
+      }
+    }
+  }
 }

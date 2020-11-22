@@ -1,0 +1,31 @@
+.pankuzu {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  line-height: 15px;
+  padding: 5px;
+  list-style: none;
+
+  li {
+    display: inline;
+
+    &:nth-child(n + 2) a {
+      text-decoration: none;
+    }
+
+    &:first-child::after {
+      content: '>';
+      padding: 0 0.2em;
+      font-size: 10px;
+      color: #515151;
+    }
+
+    a {
+      color: #4d82c4;
+    }
+
+    span {
+      font-size: 10px;
+      color: #515151;
+    }
+  }
+}
