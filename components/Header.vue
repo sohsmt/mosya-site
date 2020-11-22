@@ -25,7 +25,6 @@
         </ul>
       </nav>
     </div>
-    <p>{{ test }}</p>
   </div>
 </template>
 
