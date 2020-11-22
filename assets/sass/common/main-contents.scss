@@ -44,6 +44,7 @@
           line-height: 180%;
         }
 
+        // 医院紹介のテーブル
         table {
           margin-bottom: 20px;
           width: 100%;
@@ -78,6 +79,46 @@
         .mgn_l-10 {
           margin-right: 10px;
           font-weight: bold;
+        }
+        .mgn_r-10 {
+          margin-right: 10px;
+        }
+      }
+
+      // 院長・スタッフ紹介
+      .column2_items {
+        .column-left {
+          display: inline-block;
+          width: 200px;
+
+          h3 {
+            font-size: 13px;
+            line-height: 180%;
+            color: $title-color;
+            text-align: center;
+            background: $main-contents-color;
+          }
+          .mgn_l-15 {
+            margin-right: 15px;
+            font-weight: bold;
+          }
+        }
+
+        .column-right {
+          display: inline-block;
+          margin-left: 20px;
+          vertical-align: top;
+
+          h3 {
+            margin: 15px 0;
+            font-size: 18px;
+            color: $main-contents-color;
+          }
+
+          p {
+            font-size: 13px;
+            line-height: 180%;
+          }
         }
       }
     }
