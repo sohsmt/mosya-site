@@ -17,7 +17,7 @@
             aria-hidden="false"
             tabindex="0"
           ></iframe>
-          <a href="#" class="map_link"
+          <a href="https://goo.gl/maps/pZRCH5rhSh1DgnF58" class="map_link"
             ><p class="map_text">大きな地図で見る</p></a
           >
           <h3 class="mani_contents_title"></h3>
