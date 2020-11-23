@@ -121,6 +121,17 @@
           }
         }
       }
+
+      // アクセス
+      .map_link {
+        .map_text {
+          margin: 0;
+          margin-bottom: 10px;
+          color: #0000ff;
+          font-size: 11px;
+          line-height: 100%;
+        }
+      }
     }
   }
 }
