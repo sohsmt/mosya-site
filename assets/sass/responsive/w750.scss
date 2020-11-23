@@ -92,4 +92,21 @@
       width: 100%;
     }
   }
+
+  // フッター
+  .footer {
+    padding: 0 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &_address {
+      p {
+        span::after {
+          content: '\A';
+          white-space: pre;
+        }
+      }
+    }
+  }
 }

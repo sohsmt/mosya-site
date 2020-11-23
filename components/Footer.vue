@@ -9,8 +9,9 @@
     </div>
     <div class="footer_address">
       <p>
-        <span>デンタル クリニック</span> 東京都新宿区市谷左内町21-13
-        TEL:03-0000-0000
+        <span class="address_bold">デンタル クリニック</span>
+        <span>東京都新宿区市谷左内町21-13</span>
+        <span>TEL:03-0000-0000</span>
       </p>
     </div>
     <div class="footer_coppyright">
