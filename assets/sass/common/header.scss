@@ -54,9 +54,15 @@
           border-left: #99e1df solid 1px;
           &:first-child {
             border-left: none;
+            &:hover {
+              border-radius: 10px 0 0 10px;
+            }
           }
           &:last-child {
             border-right: none;
+            &:hover {
+              border-radius: 0 10px 10px 0;
+            }
           }
           &:hover {
             background: $main-color-hover;
