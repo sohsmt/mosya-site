@@ -5,7 +5,7 @@
         <img src="~/assets/image/siteTitle.png" alt="サイトタイトル" />
       </div>
       <div class="site__info">
-        <p>"地域に根付いた歯科医院"デンタルクリニック</p>
+        <p class="site__info-p">"地域に根付いた歯科医院"デンタルクリニック</p>
         <p class="site__info-2">03-0000-0000</p>
         <div class="site__info-time">
           <p>予約受付時間 10:00～19:30 <span>日祝 休診</span></p>
