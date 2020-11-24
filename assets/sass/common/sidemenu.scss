@@ -44,6 +44,17 @@
         }
       }
     }
+
+    .menu-head_title {
+      a:hover {
+        color: $main-contents-color;
+      }
+    }
+    .menu-foot_title {
+      a:hover {
+        color: #aec24c;
+      }
+    }
   }
 
   &-head {

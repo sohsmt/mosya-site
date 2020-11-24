@@ -2,7 +2,7 @@
   <div class="menu">
     <h2>一般歯科</h2>
     <div class="menu-head">
-      <div class="menu-title">
+      <div class="menu-title menu-head_title">
         <ul>
           <li><nuxt-link to="/service/#sidemenu_head1">虫歯治療</nuxt-link></li>
           <li>
@@ -15,7 +15,7 @@
     </div>
     <h2>審美歯科</h2>
     <div class="menu-foot">
-      <div class="menu-title">
+      <div class="menu-title menu-foot_title">
         <ul>
           <li>
             <nuxt-link to="/service/#sidemenu_foot1">ホワイトニング</nuxt-link>
