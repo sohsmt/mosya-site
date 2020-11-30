@@ -40,5 +40,12 @@
     "pug-plain-loader": "^1.0.0",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0"
-  }
+  },
+  "browserslist": [
+    "> 5%",
+    "last 2 version",
+    "android >= 4.4",
+    "IE 11",
+    "firefox > 20"
+  ]
 }

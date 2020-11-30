@@ -41,7 +41,7 @@ export default {
   build: {
     postcss: {
       preset: {
-        autoprefixer: { grid: 'autoplace' },
+        autoprefixer: { grid: true },
       },
     },
   },
